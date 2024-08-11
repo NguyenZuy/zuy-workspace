@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Suriyun.MCS {
+namespace Zuy.Workspace.MobileController {
     public class AnalogStick : UniversalButton {
         // This script is on DPad Outer
         public RectTransform dpadInner;

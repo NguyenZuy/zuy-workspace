@@ -6,9 +6,10 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using TMPro;
-using static Suriyun.MCS.UniversalButton;
+using static Zuy.Workspace.MobileController.UniversalButton;
 
-namespace Suriyun.MCS {
+namespace Zuy.Workspace.MobileController
+{
     public class TouchArea : MonoBehaviour,
     IPointerDownHandler,
     IBeginDragHandler,

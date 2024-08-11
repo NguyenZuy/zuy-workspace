@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Suriyun.MCS {
+namespace Zuy.Workspace.MobileController
+{
     [DefaultExecutionOrder(-1200)]
     public class UIScaler : MonoBehaviour {
         public CanvasScaler scaler;

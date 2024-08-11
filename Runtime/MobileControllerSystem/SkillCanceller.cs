@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Suriyun.MCS {
+namespace Zuy.Workspace.MobileController
+{
     public class SkillCanceller : MonoBehaviour {
         public UniversalButton[] associateBtns;
         public bool isAnyFingerDown;
