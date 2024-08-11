@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="SampleView1" src="project://database/Assets/Resource/UI/SampleView1.uxml?fileID=9197481963319205126&amp;guid=806579dae969a894d85c57c68b2554ae&amp;type=3#SampleView1" />
+    <engine:Template name="SampleView2" src="project://database/Assets/Resource/UI/SampleView2.uxml?fileID=9197481963319205126&amp;guid=466500a3a713b134fb6300707648357e&amp;type=3#SampleView2" />
+    <Style src="project://database/Assets/Resource/UI/ui-view.uss?fileID=7433441132597879392&amp;guid=1dc43c52a223cda468384962f2830666&amp;type=3#ui-view" />
+    <engine:Instance template="SampleView1" name="sample_view_1" class="view__fade--invisible" style="position: absolute; justify-content: flex-start; width: 100%; height: 100%; display: none;" />
+    <engine:Instance template="SampleView2" name="sample_view_2" class="view__fade--invisible" style="position: absolute; width: 100%; height: 100%; display: none;" />
+</engine:UXML>

@@ -5,12 +5,19 @@
   "description": "This is an example package",
   "unity": "2022.1",
   "unityRelease": "0b5",
- "keywords": [
+  "keywords": [
     "zuy",
-"workspace"
+    "workspace"
   ],
   "author": {
     "name": "Zuy",
     "email": "nguyenduydevgame@gmail.com"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "UIManager Sample View",
+      "description": "This a show & hide view example.",
+      "path": "Samples~/UIManager"
+    }
+  ]
 }
