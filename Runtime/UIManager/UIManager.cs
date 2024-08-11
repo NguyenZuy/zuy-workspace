@@ -61,8 +61,8 @@ namespace Zuy.Workspace.UI
         {
             VisualElement root = _mainUIDocument.rootVisualElement;
 
-            _sampleView1 = new SampleView1(root.Q<VisualElement>(_sampleView1Name), TransitionType.None);
-            _sampleView2 = new SampleView2(root.Q<VisualElement>(_sampleView2Name), TransitionType.None);
+            _sampleView1 = new SampleView1(root.Q<VisualElement>(_sampleView1Name), TransitionType.Fade);
+            _sampleView2 = new SampleView2(root.Q<VisualElement>(_sampleView2Name), TransitionType.Fade);
 
             _dictAllViews = new Dictionary<string, UIView>
             {

@@ -1,5 +1,5 @@
 .view__fade {
-    transition: opacity 100ms ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .view__fade--visible {
@@ -9,3 +9,4 @@
 .view__fade--invisible {
     opacity: 0;
 }
+    

@@ -42,6 +42,7 @@ namespace Zuy.Workspace.UI
                 m_TopElement.AddToClassList("view__fade--visible");
                 m_TopElement.RemoveFromClassList("view__fade--invisible");
             }
+
             OnShown();
         }
 
@@ -56,6 +57,7 @@ namespace Zuy.Workspace.UI
                 m_TopElement.RemoveFromClassList("view__fade--visible");
                 m_TopElement.AddToClassList("view__fade--invisible");
             }
+
             OnHidden();
         }
         #endregion
