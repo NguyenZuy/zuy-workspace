@@ -1,0 +1,14 @@
+{
+    "name": "Zuy.Workspace.UI",
+    "rootNamespace": "Zuy.Workspace.UI",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
