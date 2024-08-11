@@ -15,9 +15,9 @@
   },
   "samples": [
     {
-      "displayName": "UIManager Sample View",
-      "description": "This a show & hide view example.",
-      "path": "Samples~/UIManager"
+      "displayName": "Workspace Samples",
+      "description": "This contain multiple samples about my workspace.",
+      "path": "Samples~/WorkspaceSample"
     }
   ]
 }
