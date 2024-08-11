@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using Suriyun.MCS;
+using Zuy.Workspace.MobileController;
 
 public class ExampleActor : MonoBehaviour {
     public UniversalButton inputMove;

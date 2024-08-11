@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-using Suriyun.MCS;
+using Zuy.Workspace.MobileController;
 using System;
 
 public class NavMeshActor : MonoBehaviour {
