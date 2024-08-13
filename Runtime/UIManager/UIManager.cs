@@ -5,9 +5,11 @@ using UnityEngine.UIElements;
 namespace Zuy.Workspace.UI
 {
     [RequireComponent(typeof(UIDocument))]
-    public class UIManager : MonoBehaviour
+    public class UIManager : Base.BaseSingleton<UIManager>
     {
         #region Variables
+        protected Dictionary<string, UIView> m_AllViews = new Dictionary<string, UIView>();
+
         // Samples Views
         private UIView _sampleView1;
         private UIView _sampleView2;
@@ -17,14 +19,14 @@ namespace Zuy.Workspace.UI
         private const string _sampleView2Name = "sample_view_2";
 
         private UIDocument _mainUIDocument;
-        private Dictionary<string, UIView> _dictAllViews;
 
         public UIDocument MainUIDocument => _mainUIDocument;
         #endregion
 
         #region Unity Lifecircle Methods
-        protected virtual void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             _mainUIDocument = GetComponent<UIDocument>();
         }
 
@@ -64,19 +66,17 @@ namespace Zuy.Workspace.UI
             _sampleView1 = new SampleView1(root.Q<VisualElement>(_sampleView1Name), TransitionType.Fade);
             _sampleView2 = new SampleView2(root.Q<VisualElement>(_sampleView2Name), TransitionType.Fade);
 
-            _dictAllViews = new Dictionary<string, UIView>
-            {
-                { _sampleView1Name, _sampleView1 },
-                { _sampleView2Name, _sampleView2 }
-            };
+            m_AllViews.Add(_sampleView1Name, _sampleView1);
+            m_AllViews.Add(_sampleView2Name, _sampleView2);
         }
 
         protected virtual void DisposalAllViews()
         {
-            foreach (UIView view in _dictAllViews.Values)
+            foreach (UIView view in m_AllViews.Values)
             {
                 view.Dispose();
             }
+            m_AllViews.Clear();
         }
 
         protected virtual void SubscribeToEvents()
@@ -87,6 +87,22 @@ namespace Zuy.Workspace.UI
         protected virtual void UnsubscribeFromEvents()
         {
 
+        }
+
+        protected virtual void ShowView(string viewName)
+        {
+            if (m_AllViews.TryGetValue(viewName, out var view))
+            {
+                view.Show();
+            }
+        }
+
+        protected virtual void HideView(string viewName)
+        {
+            if (m_AllViews.TryGetValue(viewName, out var view))
+            {
+                view.Hide();
+            }
         }
         #endregion
     }

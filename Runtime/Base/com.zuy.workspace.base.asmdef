@@ -1,9 +1,7 @@
 {
-    "name": "Zuy.Workspace.UI",
-    "rootNamespace": "Zuy.Workspace.UI",
-    "references": [
-        "GUID:d81f2a849aea68540913f29541e0a434"
-    ],
+    "name": "Zuy.Workspace.Base",
+    "rootNamespace": "Zuy.Workspace.Base",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -1,6 +1,6 @@
 {
-    "name": "Zuy.Workspace.UI",
-    "rootNamespace": "Zuy.Workspace.UI",
+    "name": "Zuy.Workspace.Resource",
+    "rootNamespace": "Zuy.Workspace.Resource",
     "references": [
         "GUID:d81f2a849aea68540913f29541e0a434"
     ],
