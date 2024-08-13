@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -18,7 +20,12 @@ namespace Zuy.Workspace.UI
         private const string _sampleView1Name = "sample_view_1";
         private const string _sampleView2Name = "sample_view_2";
 
+        private const string _floatingTextName = "floating_text";
+        private VisualElement _floatingText;
+
         private UIDocument _mainUIDocument;
+
+        private bool _isUsingFloatingText;
 
         public UIDocument MainUIDocument => _mainUIDocument;
         #endregion
@@ -55,6 +62,10 @@ namespace Zuy.Workspace.UI
                 _sampleView2.Show();
                 _sampleView1.Hide();
             }
+            if (Input.GetKeyUp(KeyCode.S))
+            {
+                ShowFloatingText("This is an error!!!");
+            }
         }
         #endregion
 
@@ -68,6 +79,8 @@ namespace Zuy.Workspace.UI
 
             m_AllViews.Add(_sampleView1Name, _sampleView1);
             m_AllViews.Add(_sampleView2Name, _sampleView2);
+
+            _floatingText = root.Q<VisualElement>(_floatingTextName);
         }
 
         protected virtual void DisposalAllViews()
@@ -103,6 +116,32 @@ namespace Zuy.Workspace.UI
             {
                 view.Hide();
             }
+        }
+
+        protected virtual void ShowFloatingText(string message)
+        {
+            if (_isUsingFloatingText)
+                return;
+
+            _isUsingFloatingText = true;
+            _floatingText.Q<Label>("message").text = message;
+            _floatingText.AddToClassList("floating-text__container--visible-fade");
+            _floatingText.AddToClassList("floating-text__container--visible-move");
+            StartCoroutine(HideFloatingText());
+        }
+
+        IEnumerator HideFloatingText()
+        {
+            yield return new WaitForSeconds(1f);
+            _floatingText.RemoveFromClassList("floating-text__container--trans-combined");
+            _floatingText.AddToClassList("floating-text__container--trans-fade");
+            _floatingText.RemoveFromClassList("floating-text__container--visible-fade");
+            yield return new WaitForSeconds(0.5f);
+            _floatingText.RemoveFromClassList("floating-text__container--visible-move");
+            _floatingText.RemoveFromClassList("floating-text__container--trans-fade");
+            yield return null;
+            _floatingText.AddToClassList("floating-text__container--trans-combined");
+            _isUsingFloatingText = false;
         }
         #endregion
     }

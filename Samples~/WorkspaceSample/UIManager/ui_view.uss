@@ -1,8 +1,3 @@
-.view {
-    height: 100%;
-    width: 100%;
-}
-
 .view__fade {
     transition: opacity 0.2s ease-in-out;
 }
@@ -14,4 +9,9 @@
 .view__fade--invisible {
     opacity: 0;
 }
-    
+
+.view {
+    height: 100%;
+    width: 100%;
+    display: none;
+}

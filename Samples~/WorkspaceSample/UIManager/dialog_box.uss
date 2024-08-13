@@ -1,0 +1,15 @@
+.dialog-box__overlay {
+
+}
+
+.dialog-box__overlay--visible {
+
+}
+
+.dialog-box__container {
+
+}
+
+.dialog-box__container--visible {
+    
+}

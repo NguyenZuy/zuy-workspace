@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resource/UI/floating_text.uss?fileID=7433441132597879392&amp;guid=430643f6ea98ee94eb5e810d80f88fe8&amp;type=3#floating_text" />
+    <ui:Label name="message" text="This is a popup!" class="floating-text__message" style="opacity: 1; -unity-font-style: bold;" />
+</ui:UXML>
