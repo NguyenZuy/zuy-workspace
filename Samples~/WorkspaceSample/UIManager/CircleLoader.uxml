@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:custom="YourNamespace" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resource/UI/common.uss?fileID=7433441132597879392&amp;guid=45ef682066e0a4845b9c49ee2c5780e1&amp;type=3#common" />
+    <Style src="project://database/Assets/Resource/UI/circle_loader.uss?fileID=7433441132597879392&amp;guid=4127c72b8f96cd141b8a596be43c5d70&amp;type=3#circle_loader" />
+    <ui:VisualElement name="container" class="container loader__container--center" >
+        <ui:VisualElement name="overlay" class="overlay" />
+        <ui:VisualElement name="loader_image" class="loader__image" />
+    </ui:VisualElement>
+</ui:UXML>

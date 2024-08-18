@@ -1,15 +1,72 @@
-.dialog-box__overlay {
-
+/* Effect fade */
+.dialog-box__fade {
+    transition: opacity 0.2s ease-in-out;
 }
 
-.dialog-box__overlay--visible {
-
+.view__fade__fade--invisible {
+    opacity: 0;
 }
 
-.dialog-box__container {
-
+.dialog-box__fade--visible {
+    opacity: 1;
 }
 
-.dialog-box__container--visible {
-    
+.dialog-box__container--center {
+    justify-content: center;
 }
+
+.dialog-box__content {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dialog-box__title {
+    height: 20%;
+    font-size: 50px;
+    -unity-text-align: middle-center;
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+}
+
+.dialog-box__message {
+    height: 50%;
+    font-size: 30px;
+    -unity-text-align: upper-center;
+}
+
+.dialog-box__buttons {
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.dialog-box__button {
+    width: 200px;
+    height: 70px;
+    margin-right: 60px;
+    margin-left: 70px;
+    -unity-font-style: bold;
+    font-size: 20px;
+}
+
+.dialog-box__button--yes {
+    background-color: rgb(43, 255, 0);
+}
+
+.dialog-box__button--no {
+    background-color: rgb(255, 0, 0);
+}
+
+.dialog-box__button--ok {
+    background-color: rgb(43, 255, 0);
+}
+
+.dialog-box__button--pressed {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s ease-in-out;
+}
+

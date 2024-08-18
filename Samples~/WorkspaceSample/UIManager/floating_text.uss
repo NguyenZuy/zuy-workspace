@@ -6,10 +6,6 @@
 }
 
 .floating-text__container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
     align-items: stretch;
     justify-content: center;
     translate: 0 100px;

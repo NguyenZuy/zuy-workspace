@@ -1,0 +1,26 @@
+.sample-view-2__container {
+    justify-content: center;
+}
+
+.sample-view-2__background {
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.sample-view-2__title {
+    font-size: 80px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    padding-bottom: 100px;
+}
+
+.sample-view-2__author {
+    font-size: 50px;
+    -unity-font-style: normal;
+    color: rgb(255, 0, 0);
+    -unity-text-align: upper-center;
+}

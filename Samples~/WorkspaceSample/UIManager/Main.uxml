@@ -1,0 +1,16 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="DialogBox" src="project://database/Assets/Resource/UI/DialogBox.uxml?fileID=9197481963319205126&amp;guid=e6184c9e57697b14486c709972fca597&amp;type=3#DialogBox" />
+    <engine:Template name="FloatingText" src="project://database/Assets/Resource/UI/FloatingText.uxml?fileID=9197481963319205126&amp;guid=b93074c25bf233b41bbe3414037c487b&amp;type=3#FloatingText" />
+    <engine:Template name="CircleLoader" src="project://database/Assets/Resource/UI/CircleLoader.uxml?fileID=9197481963319205126&amp;guid=caaf30eea6925be4a9f026cf903e44e8&amp;type=3#CircleLoader" />
+    <engine:Template name="SampleView1" src="project://database/Assets/Resource/UI/SampleView1.uxml?fileID=9197481963319205126&amp;guid=ec01725c272039e48b521489a4ceb736&amp;type=3#SampleView1" />
+    <engine:Template name="SampleView2" src="project://database/Assets/Resource/UI/SampleView2.uxml?fileID=9197481963319205126&amp;guid=d69022ae0dadc7d46bf4be67d79ae0a0&amp;type=3#SampleView2" />
+    <Style src="project://database/Assets/Resource/UI/main.uss?fileID=7433441132597879392&amp;guid=16dec2b56d41af746885def0e3f21b1e&amp;type=3#main" />
+    <Style src="project://database/Assets/Resource/UI/dialog_box.uss?fileID=7433441132597879392&amp;guid=41469ab7befa36347a0cc463c42538e4&amp;type=3#dialog_box" />
+    <Style src="project://database/Assets/Resource/UI/floating_text.uss?fileID=7433441132597879392&amp;guid=430643f6ea98ee94eb5e810d80f88fe8&amp;type=3#floating_text" />
+    <Style src="project://database/Assets/Resource/UI/ui_view.uss?fileID=7433441132597879392&amp;guid=ac9cc44c06a18e447981e54509e4f9cf&amp;type=3#ui_view" />
+    <engine:Instance template="SampleView1" name="sample_view_1" class="full-screen view__fade--invisible" />
+    <engine:Instance template="SampleView2" name="sample_view_2" class="full-screen view__fade--invisible" />
+    <engine:Instance template="DialogBox" name="dialog_box" class="full-screen dialog-box__fade" />
+    <engine:Instance template="FloatingText" name="floating_text" class="full-screen floating-text__container--trans-combined floating-text__container" />
+    <engine:Instance template="CircleLoader" name="circle_loader" class="full-screen" />
+</engine:UXML>

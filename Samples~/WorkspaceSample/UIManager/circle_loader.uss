@@ -1,0 +1,11 @@
+.loader__container--center {
+    justify-content: center;
+}
+
+.loader__image {
+    align-self: center;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("project://database/Assets/Resource/UI/circle_loader_sample.png?fileID=2800000&guid=426ed06d9dd07fd4e86e34e320ac7f0a&type=3#circle_loader_sample");
+}
