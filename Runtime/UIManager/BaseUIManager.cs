@@ -12,7 +12,7 @@ namespace Zuy.Workspace.UI
     /// The class also manages event subscriptions and provides methods to show/hide specific UI elements.
     /// </summary>
     [RequireComponent(typeof(UIDocument))]
-    public class UIManager : Base.BaseSingleton<UIManager>
+    public class BaseUIManager : Base.BaseSingleton<BaseUIManager>
     {
         #region Variables
         protected Dictionary<string, UIView> m_AllViews = new Dictionary<string, UIView>();
